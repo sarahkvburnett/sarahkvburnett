@@ -1,0 +1,19 @@
+<header class="px-[7%] flex justify-between mb-8 h-16">
+    <svg viewBox="0 0 110 100">
+        <polygon points="50 3, 100 28, 100 75, 50 100, 3 75, 3 25" stroke="#fff" stroke-width="1"></polygon>
+        <text x="27" y="65" fill="#fff" font-size="40px" style="
+    letter-spacing: 4px;
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-weight: 100;
+">SB</text>
+    </svg>
+    <div class="flex gap-4 justify-end items-center text-xl">
+            <span class="hidden sm:block text-base">sarahkvburnett</span>
+            <span class="h-[0.5px] w-12 md:w-20 bg-white"></span>
+            <a class="scale-90 hover:scale-100" href="{{ contact.linkedin }}"><i class="fab fa-linkedin"></i></a>
+            <a class="scale-90 hover:scale-100" href="{{ contact.twitter }}"><i class="fab fa-twitter"></i></a>
+            <a class="scale-90 hover:scale-100" href="mailto:{{ contact.email }}"><i class="fas fa-envelope"></i></a>
+            <a class="scale-90 hover:scale-100" href="{{ contact.github }}"><i class="fab fa-github"></i></a>
+    </div>
+</header>

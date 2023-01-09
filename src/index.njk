@@ -1,0 +1,38 @@
+{% extends "./_layouts/main.njk" %}
+{% set title = 'Sarah Burnett - Web Developer' %}
+
+{% block main %}
+   <section class="px-[7%] max-w-[1000px] m-auto">
+       <h1 class="">Sarah Burnett</h1>
+       <h2 class="text-blue">Web Developer</h2>
+       <div class="h3">
+           <i class="fab fa-html5 scale-90 hover:scale-100"></i>
+           <i class="fab fa-css3-alt scale-90 hover:scale-100"></i>
+           <i class="fab fa-js scale-90 hover:scale-100"></i>
+           <i class="fab fa-sass scale-90 hover:scale-100"></i>
+           <i class="fab fa-react scale-90 hover:scale-100"></i>
+           <i class="fab fa-node-js scale-90 hover:scale-100"></i>
+           <i class="fab fa-php scale-90 hover:scale-100"></i>
+           {# Need to add icon for C# #}
+       </div>
+       <p class="mt-6 mb-3 text-[1.3rem]">Hi I'm a self-taught full-stack web developer from Exeter, UK.</p>
+       <p class="mb-6">Starting out in medical research I discovered a love of coding and building software to solve people's problems. I currently work for <a class="text-blue" href="https://www.ardigitalsolutions.co.uk">AR Digital Solutions</a> on CMS builds, eCommerce platforms and bespoke web applications/systems.</p>
+       <p>Here are a few technologies I have been working with recently:</p>
+       <ul class="columns-2 max-w-[600px] text-sm">
+           <li>Javascript (ES6+)</li>
+           <li>Typescript</li>
+           <li>React</li>
+           <li>Angular</li>
+           <li>Node.js</li>
+           <Li>Eleventy</Li>
+           <li>Tailwind CSS</li>
+           <li>Shopify / Liquid</li>
+           <li>Laravel</li>
+       </ul>
+       <div class="flex items-center mt-10 relative">
+           <span class="h-[0.5px] w-32 bg-white absolute -ml-32"></span>
+           <a class="btn btn-pink" href="{{ contact.github }}">Check out my Github!</a>
+           <span class="h-[0.5px] w-12 md:w-32 bg-white"></span>
+       </div>
+   </section>
+{% endblock %}

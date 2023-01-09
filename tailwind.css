@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        @apply text-base bg-black text-white py-4;
+    }
+
+    h1,h2,h3,h4,h5 {
+        @apply font-bold;
+    }
+
+    h1, .h1 {
+        @apply text-[3.2rem] sm:text-4xl;
+        line-height: 1;
+    }
+
+    h2, .h2 {
+        @apply text-[2.5rem] sm:text-3xl;
+    }
+
+    h3, .h3 {
+        @apply text-[2.2rem] text-2xl;
+    }
+
+    h4, .h4 {
+        @apply text-xl;
+    }
+
+    h5, .h5 {
+        @apply text-base;
+    }
+
+    small {
+        @apply text-sm;
+    }
+
+}
+
+@layer utilities {
+
+    .container {
+        @apply max-w-full px-[7%];
+    }
+
+    ul:not(.list-none) li {
+        @apply flex mb-1 mr-2 before:content-["▹"] before:text-blue before:font-bold;
+    }
+
+   /*!* Buttons *!*/
+    .btn {
+        @apply py-2 px-8 rounded-3xl inline-block transition-all
+    }
+
+    .btn-pink {
+        @apply bg-pink text-[1.2rem] scale-95 hover:scale-100;
+    }
+
+}
+
+
